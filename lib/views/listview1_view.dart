@@ -82,7 +82,7 @@ class _ListView2State extends State<ListView2> {
         print(usuario);
         print(contrasena);
 
-        if (usuario == 'sebas' || usuario == 'Sebas' && contrasena == '1234') {
+        if (usuario == 'sebas' && contrasena == '1234') {
           Navigator.push(
             context, MaterialPageRoute(builder: (context) => ListView1()));
         }
