@@ -14,7 +14,7 @@ class _ListView5State extends State<ListView5> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Citas y agendamientos'),
+        title: Text('Citas y Agendamientos'),
       ),
       body: Center(
         child: Column(

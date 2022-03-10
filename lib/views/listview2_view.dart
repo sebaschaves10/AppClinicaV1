@@ -1,3 +1,6 @@
+import 'package:clinica_odontologica/views/cardViews/cardviewsCitas.dart';
+import 'package:clinica_odontologica/views/card_view_citas.dart';
+import 'package:clinica_odontologica/views/card_view_pagos.dart';
 import 'package:flutter/material.dart';
 import 'package:clinica_odontologica/views/listview3_view.dart';
 import 'package:clinica_odontologica/views/listview4_view.dart';
@@ -13,12 +16,12 @@ class ListView1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Menú prinicipal'),
+        title: Text('Menú Prinicipal'),
       ),
       body: ListView(
         children: [
           ListTile(
-            title: Text('Mis datos personales'),
+            title: Text('Mis Datos Personales'),
             trailing: Icon(Icons.assignment_ind),
             onTap: () {
               Navigator.push(context, 
@@ -29,7 +32,7 @@ class ListView1 extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            title: Text('Mis tratamientos'),
+            title: Text('Mis Tratamientos'),
             trailing: Icon(Icons.subject),
             onTap: () {
               Navigator.push(context, 
@@ -40,21 +43,21 @@ class ListView1 extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            title: Text('Citas y agendamientos'),
+            title: Text('Citas y Agendamientos'),
             trailing: Icon(Icons.calendar_today),
             onTap: () {
               Navigator.push(context, 
-                MaterialPageRoute(builder: (context) => ListView5()
+                MaterialPageRoute(builder: (context) => CardViewCitas()
               ));
             }
           ),
           Divider(),
           ListTile(
-            title: Text('Pagos realizados'),
+            title: Text('Pagos Realizados'),
             trailing: Icon(Icons.payment),
             onTap: () {
               Navigator.push(context, 
-                MaterialPageRoute(builder: (context) => ListView6()
+                MaterialPageRoute(builder: (context) => CardViewPagos()
               ));
             }
           ),

@@ -14,7 +14,7 @@ class _ListView4State extends State<ListView4> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Mis tratamientos'),
+          title: Text('Mis Tratamientos'),
         ),
         body: Center(
         child: Column(
